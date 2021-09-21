@@ -1,4 +1,6 @@
 
-import { ReactAppAdapter } from './react'
+import { Application } from './application';
+import { createReactUI } from './react'
 
-ReactAppAdapter.start();
+const app: Application = createReactUI()
+app.start();
