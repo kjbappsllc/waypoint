@@ -1,2 +1,4 @@
 
-export default {}
+import { ReactAppAdapter } from './react'
+
+ReactAppAdapter.start();
