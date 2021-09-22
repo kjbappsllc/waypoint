@@ -1,11 +1,17 @@
 import { Currency } from "../../shared/core/currency";
+import { EquipmentType } from "./equipment-type";
+import { Location } from "./location";
 
-export class Load {
+export interface Load {
+  creatorId: string;
   timeCreated: Date;
   rate: Currency;
-
-  constructor(timeCreated: Date, rate: Currency) {
-    this.rate = rate;
-    this.timeCreated = timeCreated;
-  }
+  origin: Location;
+  stops: Location [];
+  destination: Location;
+  shipDate: Date;
+  deliveryDate: Date;
+  weight: number;
+  equipmentType: EquipmentType;
+  miles: number;
 }
