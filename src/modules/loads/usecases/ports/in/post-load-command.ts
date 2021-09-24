@@ -1,5 +1,5 @@
 import { Load } from "../../../domain/load";
 
-export interface SaveLoadCommand {
+export interface PostLoadCommand {
   load: Load;
 }

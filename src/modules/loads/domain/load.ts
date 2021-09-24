@@ -7,11 +7,12 @@ export interface Load {
   timeCreated: Date;
   rate: Currency;
   origin: Location;
-  stops: Location [];
+  stops: Location[];
   destination: Location;
   shipDate: Date;
   deliveryDate: Date;
   weight: number;
   equipmentType: EquipmentType;
   miles: number;
+  commodity: string;
 }
