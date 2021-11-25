@@ -7,6 +7,6 @@ export type TextProps = {
 export const Text: React.FC<TextProps> = (props: TextProps) => {
   const { text } = props
   return (
-    <div>{{ text }}</div>
+    <div>{text}</div>
   )
 }

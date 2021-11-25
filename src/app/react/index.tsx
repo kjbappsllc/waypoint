@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Text } from './shared/text/text.component'
 import { Application } from '../application';
+import '../index.scss'
 
 export const createReactUI = (): Application => ({
   start: () => {
